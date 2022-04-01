@@ -1,0 +1,31 @@
+@mixin placeholder {
+  color: $medium-gray;
+  font-family: $font-normal;
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  @include placeholder;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  @include placeholder;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  @include placeholder;
+}
+
+input[type="text"] {
+  background-color: $white;
+  border: 0;
+  border-radius: .375rem;
+  box-sizing: border-box;
+  font-family: $font-normal;
+  padding: 0.813rem 1rem .75rem;
+
+  &:focus {
+    outline-color: $purple;
+  }
+}

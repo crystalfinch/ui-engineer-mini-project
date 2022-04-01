@@ -1,1 +1,43 @@
-div.individual div.card { margin: 0px auto; width: 300px; }
+@import "variables";
+
+.individual {
+  align-items: center;
+  background-color: $slate;
+  border-radius: .625rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0 auto 4rem;
+  max-width: 38.313rem;
+  padding: 2rem;
+  text-align: center;
+
+  &__image {
+    border-radius: 6.25rem;
+    display: block;
+    margin-bottom: 2.75rem;
+    min-height: 18.75rem;
+    min-width: 18.75rem;
+  }
+
+  &__name {
+    font-family: $font-bold;
+    font-size: 2.25rem;
+    line-height: 1.125rem;
+    margin: 0 0 3rem;
+  }
+
+  &__attributes {
+    list-style: none;
+    margin: 0 0 1.75rem;
+    padding: 0;
+  }
+
+  &__attribute {
+    display: inline-block;
+    font-size: 1.125rem;
+    line-height: 1.125rem;
+    margin: 0 1rem;
+  }
+}

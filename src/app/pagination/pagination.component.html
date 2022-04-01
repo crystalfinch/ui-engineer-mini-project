@@ -1,0 +1,7 @@
+<nav class="pagination">
+  <ul class="pagination__list">
+    <li class="pagination__item" *ngFor="let p of pages" [ngClass]="{'pagination__item--active': (p === currentPage)}">
+      <button class="pagination__button" (click)="emitSelected(p)">{{p}}</button>
+    </li>
+  </ul>
+</nav>

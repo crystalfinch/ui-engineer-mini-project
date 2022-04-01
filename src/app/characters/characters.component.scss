@@ -1,0 +1,11 @@
+@import "variables";
+@import "buttons";
+@import "tables";
+@import "forms";
+
+.search-form {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: 1fr 13.25rem;
+  margin-bottom: 2.5rem;
+}

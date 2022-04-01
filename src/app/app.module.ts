@@ -8,6 +8,7 @@ import { CharactersComponent } from './characters/characters.component';
 import { EpisodesComponent } from './episodes/episodes.component';
 import { IndividualComponent } from './individual/individual.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { PaginationComponent } from './pagination/pagination.component';
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({
@@ -15,8 +16,9 @@ import { HeaderComponent } from './header/header.component';
     AppComponent,
     CharactersComponent,
     EpisodesComponent,
-    IndividualComponent
+    IndividualComponent,
     NavigationComponent,
+    PaginationComponent,
     HeaderComponent
   ],
   imports: [
