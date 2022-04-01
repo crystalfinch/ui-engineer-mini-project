@@ -1,0 +1,14 @@
+<nav class="navigation">
+  <ul class="navigation__list">
+    <li class="navigation__item" [class.navigation__item--active]="charactersActive">
+      <a [routerLink]="'/characters'" [queryParams]="queryParams" class="navigation__link">
+        Characters
+      </a>
+    </li>
+    <li class="navigation__item" [routerLinkActive]="'navigation__item--active'">
+      <a [routerLink]="'/episodes'" class="navigation__link">
+        Episode Guide
+      </a>
+    </li>
+  </ul>
+</nav>

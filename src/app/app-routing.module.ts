@@ -7,8 +7,8 @@ import { IndividualComponent } from './individual/individual.component';
 const routes: Routes = [
   { path: '', redirectTo: 'characters', pathMatch: 'full' },
   { path: 'characters', component: CharactersComponent },
-  { path: 'episodes', component: EpisodesComponent },
-  { path: 'character/:id', component: IndividualComponent }
+  { path: 'characters/:id', component: IndividualComponent },
+  { path: 'episodes', component: EpisodesComponent }
 ];
 
 @NgModule({
